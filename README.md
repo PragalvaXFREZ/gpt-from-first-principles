@@ -12,7 +12,7 @@ uv run jupyter lab
 ```
 
 Run Jupyter from the repository root. Each notebook locates the root before
-loading shared data, so it can also be executed directly by notebook tooling.
+loading project files, so it can also be executed directly by notebook tooling.
 
 ## Learning path
 
@@ -24,8 +24,9 @@ loading shared data, so it can also be executed directly by notebook tooling.
 The notebooks are intentionally numbered. Work through them in order because
 each one assumes the shapes and vocabulary introduced by the previous one.
 
-## Current progress
+## Repository layout
 
-- Text foundations have been migrated from the original chapter 2 experiments.
-- Dot-product attention by hand has been migrated from the chapter 3 experiment.
-- The remaining attention notebooks mark the next implementation steps.
+- `notebooks/`: numbered, executable implementations and explanations
+- `data/`: text corpora used by the notebooks
+- `pyproject.toml`: Python project and dependency declarations
+- `uv.lock`: reproducible dependency versions
